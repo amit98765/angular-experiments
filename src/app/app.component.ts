@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  name="A Big Name that could be seen";
   isZipCodeValid: boolean = true;
+
+  changeName():void{
+    this.name = "This is the changed name";
+  }
 }
