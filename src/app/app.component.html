@@ -14,10 +14,14 @@
     <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
   </li>
   <li>
-    <h2><a (click)="changeName()" target="#" >Angular blog</a></h2>
-    <span [hidden] = "isZipCodeValid"> This is a span element</span>
-
+    <h2><a (click)="changeName()" target="#">Angular blog</a></h2>
+    <span [hidden]="isZipCodeValid"> This is a span element</span>
+    <input type="text" [(ngModel)]="shippingAddress">
+    <br/><br/><br/>
+    <br/> The shipping address is {{shippingAddress}}.
+    <br /><br/><br/><br/>
+    <button (click)="setDefaultSA()">Set Default</button>
+    <br/><br/><br/><br/><br/> 
     <b>{{name}}</b>
   </li>
 </ul>
-
